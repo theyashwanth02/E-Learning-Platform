@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learn | Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+
+<div class="login-shell">
+    <section class="login-brand">
+        <div class="brand-mark">🎓</div>
+        <div class="brand-name">E-Learn</div>
+        <h1>Learn. Practice.<br>Perform better.</h1>
+        <p>A simple e-learning platform with performance management for students and faculty.</p>
+        <div class="brand-points">
+            <span>✓ Courses & study materials</span>
+            <span>✓ Quizzes & assignments</span>
+            <span>✓ Performance analytics</span>
+        </div>
+    </section>
+
+    <section class="login-card">
+        <h2>Welcome back</h2>
+        <p class="muted">Sign in to continue to your learning portal.</p>
+
+        <label for="role">Login as</label>
+        <select id="role">
+            <option value="student">Student</option>
+            <option value="faculty">Faculty</option>
+        </select>
+
+        <label for="username">Username</label>
+        <input id="username" type="text" placeholder="Enter username" autocomplete="username">
+
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Enter password" autocomplete="current-password"
+               onkeydown="if(event.key==='Enter') login()">
+
+        <button class="primary-btn full-btn" onclick="login()">Login</button>
+        <p id="loginMessage" class="form-message"></p>
+
+        <div class="demo-box">
+            <strong>Demo credentials</strong>
+            <div>Student: <b>yashwanth</b> / <b>1234</b></div>
+            <div>Faculty: <b>faculty</b> / <b>1234</b></div>
+        </div>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Learn | Java Quiz</title><link rel="stylesheet" href="style.css">
+</head>
+<body data-page="student">
+<nav class="navbar">
+<a class="brand" href="dashboard.html"><span class="brand-icon">🎓</span>E-Learn</a>
+<div class="nav-links"><a href="dashboard.html">Dashboard</a><a href="courses.html">📚 My Courses</a><a href="assignments.html">📋 Assignments</a><a class="active" href="quiz.html">❓ Quizzes</a><a href="performance.html">📊 Performance</a><button class="logout-btn" onclick="logout()">Logout</button></div>
+</nav>
+<main class="page-container narrow">
+<div class="page-header"><div><p class="eyebrow">ASSESSMENT</p><h1>Java Programming Quiz</h1><p>3 questions · Your result is saved to Performance Management.</p></div><span class="header-badge">10 Marks</span></div>
+<section class="quiz-card">
+<div class="quiz-question"><span>Question 1 of 3</span><h2>Which keyword is used to inherit a class in Java?</h2>
+<label class="option"><input type="radio" name="q1" value="wrong"> implements</label>
+<label class="option"><input type="radio" name="q1" value="correct"> extends</label>
+<label class="option"><input type="radio" name="q1" value="wrong"> inherits</label>
+<label class="option"><input type="radio" name="q1" value="wrong"> super</label></div>
+<div class="quiz-question"><span>Question 2 of 3</span><h2>Which method is the entry point of a Java application?</h2>
+<label class="option"><input type="radio" name="q2" value="correct"> public static void main(String[] args)</label>
+<label class="option"><input type="radio" name="q2" value="wrong"> start()</label>
+<label class="option"><input type="radio" name="q2" value="wrong"> run()</label>
+<label class="option"><input type="radio" name="q2" value="wrong"> init()</label></div>
+<div class="quiz-question"><span>Question 3 of 3</span><h2>Which concept allows the same method name to have different forms?</h2>
+<label class="option"><input type="radio" name="q3" value="wrong"> Encapsulation</label>
+<label class="option"><input type="radio" name="q3" value="correct"> Polymorphism</label>
+<label class="option"><input type="radio" name="q3" value="wrong"> Abstraction</label>
+<label class="option"><input type="radio" name="q3" value="wrong"> Compilation</label></div>
+<button class="primary-btn" onclick="submitQuiz()">Submit Quiz</button>
+<div id="quizResult" class="quiz-result"></div>
+</section>
+</main>
+<footer>© 2026 E-Learn · Assessment Module</footer>
+<script src="script.js"></script>
+</body>
+</html>

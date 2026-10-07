@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Learn | Performance Management</title><link rel="stylesheet" href="style.css">
+</head>
+<body data-page="student">
+<nav class="navbar">
+<a class="brand" href="dashboard.html"><span class="brand-icon">🎓</span>E-Learn</a>
+<div class="nav-links"><a href="dashboard.html">Dashboard</a><a href="courses.html">📚 My Courses</a><a href="assignments.html">📋 Assignments</a><a href="quiz.html">❓ Quizzes</a><a class="active" href="performance.html">📊 Performance</a><button class="logout-btn" onclick="logout()">Logout</button></div>
+</nav>
+<main class="page-container">
+<div class="page-header"><div><p class="eyebrow">PERFORMANCE MANAGEMENT</p><h1>My Performance</h1><p>Analyze your learning performance across quizzes, assignments and course progress.</p></div></div>
+
+<section class="performance-hero">
+<div><p class="eyebrow light">OVERALL PERFORMANCE</p><h2 id="performanceScore">78%</h2><p id="performanceLabel">Good performance — keep going!</p></div>
+<div class="donut large" id="performanceDonut" style="--value:78"><div><strong id="donutScore">78%</strong><small>Overall</small></div></div>
+</section>
+
+<section class="weighted-grid">
+<div class="weight-card"><span>Quiz · 30%</span><strong id="quizScore">82%</strong><div class="bar"><i id="quizBar" style="width:82%"></i></div></div>
+<div class="weight-card"><span>Assignments · 30%</span><strong>75%</strong><div class="bar"><i style="width:75%"></i></div></div>
+<div class="weight-card"><span>Course Progress · 20%</span><strong>80%</strong><div class="bar"><i style="width:80%"></i></div></div>
+<div class="weight-card"><span>Final Assessment · 20%</span><strong>76%</strong><div class="bar"><i style="width:76%"></i></div></div>
+</section>
+
+<section class="content-panel">
+<div class="panel-heading"><div><h2>Performance Breakdown</h2><p>Weighted calculation used by this prototype</p></div></div>
+<div class="calculation">
+<div><span>Quiz</span><b>82 × 30%</b><strong>24.6</strong></div>
+<div><span>Assignments</span><b>75 × 30%</b><strong>22.5</strong></div>
+<div><span>Course Progress</span><b>80 × 20%</b><strong>16.0</strong></div>
+<div><span>Final Assessment</span><b>76 × 20%</b><strong>15.2</strong></div>
+<div class="total"><span>Total</span><b>78.3%</b><strong>78%</strong></div>
+</div>
+</section>
+
+<section class="recommendation">
+<h2>💡 Personalized Recommendation</h2>
+<p>Your quiz performance is strong. Focus next on improving assignment scores and completing the remaining Java modules. Consistent progress can help you move above 85%.</p>
+</section>
+</main>
+<footer>© 2026 E-Learn · Performance Management</footer>
+<script src="script.js"></script>
+</body>
+</html>

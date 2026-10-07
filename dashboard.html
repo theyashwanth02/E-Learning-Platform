@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learn | Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="student">
+
+<nav class="navbar">
+    <a class="brand" href="dashboard.html"><span class="brand-icon">🎓</span>E-Learn</a>
+    <div class="nav-links">
+        <a class="active" href="dashboard.html">Dashboard</a>
+        <a href="courses.html">📚 My Courses</a>
+        <a href="assignments.html">📋 Assignments</a>
+        <a href="quiz.html">❓ Quizzes</a>
+        <a href="performance.html">📊 Performance</a>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+</nav>
+
+<main class="dashboard-container">
+    <section class="welcome-banner">
+        <div>
+            <p class="eyebrow">STUDENT PORTAL</p>
+            <h1>Welcome back, <span id="welcomeName">Yashwanth</span>! 👋</h1>
+            <p>Continue your learning journey and keep improving your performance.</p>
+        </div>
+        <div class="profile-badge">
+            <span id="profileInitial">Y</span>
+            <div><strong id="profileName">Yashwanth</strong><small>CSE · 3rd Year</small></div>
+        </div>
+    </section>
+
+    <section class="stats-grid">
+        <div class="stat-card"><div class="stat-icon blue">📚</div><div><span>Enrolled Courses</span><strong>4</strong></div></div>
+        <div class="stat-card"><div class="stat-icon green">✓</div><div><span>Completed Tasks</span><strong id="completedTasks">12</strong></div></div>
+        <div class="stat-card"><div class="stat-icon purple">📝</div><div><span>Average Quiz</span><strong id="avgQuiz">82%</strong></div></div>
+        <div class="stat-card"><div class="stat-icon orange">📈</div><div><span>Overall Performance</span><strong id="overallStat">78%</strong></div></div>
+    </section>
+
+    <section class="dashboard-grid">
+        <div class="panel">
+            <div class="panel-heading">
+                <div><h2>My Courses</h2><p>Continue where you left off</p></div>
+                <a class="text-link" href="courses.html">View all →</a>
+            </div>
+
+            <div class="course-row">
+                <div class="course-symbol java">☕</div>
+                <div class="course-main"><h3>Java Programming</h3><p>Programming Fundamentals</p>
+                    <div class="mini-progress"><span style="width:85%"></span></div>
+                </div>
+                <b class="percent">85%</b><a class="outline-btn" href="course.html">Continue</a>
+            </div>
+            <div class="course-row">
+                <div class="course-symbol db">🗄️</div>
+                <div class="course-main"><h3>Database Management</h3><p>DBMS Concepts</p>
+                    <div class="mini-progress"><span style="width:65%"></span></div>
+                </div>
+                <b class="percent">65%</b><a class="outline-btn" href="courses.html">Continue</a>
+            </div>
+            <div class="course-row">
+                <div class="course-symbol cn">🌐</div>
+                <div class="course-main"><h3>Computer Networks</h3><p>Networking Fundamentals</p>
+                    <div class="mini-progress"><span style="width:55%"></span></div>
+                </div>
+                <b class="percent">55%</b><a class="outline-btn" href="courses.html">Continue</a>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-heading">
+                <div><h2>Performance Overview</h2><p>Current academic performance</p></div>
+                <a class="text-link" href="performance.html">Details →</a>
+            </div>
+            <div class="score-layout">
+                <div class="donut" style="--value:78"><div><strong>78%</strong><small>Overall</small></div></div>
+                <div><h3 class="good">Good Performance 🎉</h3><p class="muted">Keep improving your quiz and assignment scores.</p></div>
+            </div>
+            <div class="metric"><span>Quiz</span><div class="bar"><i style="width:82%"></i></div><b>82%</b></div>
+            <div class="metric"><span>Assignments</span><div class="bar"><i style="width:75%"></i></div><b>75%</b></div>
+            <div class="metric"><span>Course Progress</span><div class="bar"><i style="width:80%"></i></div><b>80%</b></div>
+        </div>
+    </section>
+
+    <section class="dashboard-grid">
+        <div class="panel">
+            <div class="panel-heading"><div><h2>Upcoming Tasks</h2><p>Stay on top of deadlines</p></div><a class="text-link" href="assignments.html">View all →</a></div>
+            <div class="task-row"><div class="date-box"><b>15</b><small>SEP</small></div><div><h3>Java Assignment</h3><p>Object-Oriented Programming</p></div><span class="status pending">Pending</span></div>
+            <div class="task-row"><div class="date-box"><b>18</b><small>SEP</small></div><div><h3>DBMS Quiz</h3><p>SQL and Normalization</p></div><span class="status upcoming">Upcoming</span></div>
+            <div class="task-row"><div class="date-box"><b>20</b><small>SEP</small></div><div><h3>Computer Networks Assignment</h3><p>Transport Layer</p></div><span class="status upcoming">Upcoming</span></div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-heading"><div><h2>Quick Actions</h2><p>Frequently used features</p></div></div>
+            <div class="quick-grid">
+                <a href="courses.html" class="quick-card"><span>📚</span><b>My Courses</b><small>Study materials</small></a>
+                <a href="quiz.html" class="quick-card"><span>📝</span><b>Take Quiz</b><small>Test your knowledge</small></a>
+                <a href="assignments.html" class="quick-card"><span>📋</span><b>Assignments</b><small>Submit your work</small></a>
+                <a href="performance.html" class="quick-card"><span>📊</span><b>Performance</b><small>Track progress</small></a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>© 2026 E-Learn · E-Learning Platform with Performance Management</footer>
+<script src="script.js"></script>
+</body>
+</html>

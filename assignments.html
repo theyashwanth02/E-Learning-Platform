@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Learn | Assignments</title><link rel="stylesheet" href="style.css">
+</head>
+<body data-page="student">
+<nav class="navbar">
+<a class="brand" href="dashboard.html"><span class="brand-icon">🎓</span>E-Learn</a>
+<div class="nav-links"><a href="dashboard.html">Dashboard</a><a href="courses.html">📚 My Courses</a><a class="active" href="assignments.html">📋 Assignments</a><a href="quiz.html">❓ Quizzes</a><a href="performance.html">📊 Performance</a><button class="logout-btn" onclick="logout()">Logout</button></div>
+</nav>
+<main class="page-container">
+<div class="page-header"><div><p class="eyebrow">ASSESSMENTS</p><h1>Assignments</h1><p>View deadlines, submit work and track your evaluation status.</p></div></div>
+<section class="content-panel table-panel">
+<div class="table-wrap"><table>
+<thead><tr><th>Assignment</th><th>Course</th><th>Due Date</th><th>Marks</th><th>Status</th><th>Action</th></tr></thead>
+<tbody>
+<tr><td><strong>OOP Concepts</strong><small>Inheritance and polymorphism</small></td><td>Java Programming</td><td>15 Sep 2026</td><td>8/10</td><td><span class="status completed">Evaluated</span></td><td><button class="small-btn" onclick="viewFeedback('OOP Concepts')">Feedback</button></td></tr>
+<tr><td><strong>SQL Queries</strong><small>Joins and aggregate functions</small></td><td>Database Management</td><td>18 Sep 2026</td><td>—</td><td><span class="status pending">Pending</span></td><td><button class="small-btn" onclick="submitAssignment('SQL Queries')">Submit</button></td></tr>
+<tr><td><strong>Transport Layer</strong><small>TCP and UDP comparison</small></td><td>Computer Networks</td><td>20 Sep 2026</td><td>—</td><td><span class="status upcoming">Upcoming</span></td><td><button class="small-btn" onclick="submitAssignment('Transport Layer')">Submit</button></td></tr>
+<tr><td><strong>Search Strategies</strong><small>BFS, DFS and heuristic search</small></td><td>Artificial Intelligence</td><td>25 Sep 2026</td><td>9/10</td><td><span class="status completed">Evaluated</span></td><td><button class="small-btn" onclick="viewFeedback('Search Strategies')">Feedback</button></td></tr>
+</tbody></table></div>
+</section>
+</main>
+<footer>© 2026 E-Learn · Assignments</footer>
+<script src="script.js"></script>
+</body>
+</html>

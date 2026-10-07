@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Learn | Faculty Performance</title><link rel="stylesheet" href="style.css">
+</head>
+<body data-page="faculty">
+<nav class="navbar">
+<a class="brand" href="faculty.html"><span class="brand-icon">🎓</span>E-Learn <em>Faculty</em></a>
+<div class="nav-links"><a href="faculty.html">Dashboard</a><a class="active" href="faculty-performance.html">📊 Student Performance</a><button class="logout-btn" onclick="logout()">Logout</button></div>
+</nav>
+<main class="page-container">
+<div class="page-header"><div><p class="eyebrow">FACULTY ANALYTICS</p><h1>Student Performance</h1><p>Monitor student progress and identify learners who need support.</p></div><select class="filter-select" onchange="filterStudents(this.value)"><option value="all">All Students</option><option value="high">Above 80%</option><option value="support">Needs Support</option></select></div>
+<section class="performance-hero compact"><div><p class="eyebrow light">CLASS PERFORMANCE</p><h2>76%</h2><p>Average performance across 48 students</p></div><div class="class-bars"><div><span>Quiz</span><i style="width:82%"></i><b>82%</b></div><div><span>Assignments</span><i style="width:74%"></i><b>74%</b></div><div><span>Progress</span><i style="width:78%"></i><b>78%</b></div></div></section>
+<section class="content-panel table-panel"><div class="panel-heading"><div><h2>Student Performance Report</h2><p>Weighted performance indicators</p></div></div>
+<div class="table-wrap"><table id="studentTable"><thead><tr><th>Student</th><th>Quiz</th><th>Assignments</th><th>Progress</th><th>Overall</th><th>Status</th></tr></thead>
+<tbody>
+<tr data-score="86"><td><strong>Yashwanth</strong><small>CSE3A001</small></td><td>82%</td><td>88%</td><td>90%</td><td><strong>86%</strong></td><td><span class="status completed">Excellent</span></td></tr>
+<tr data-score="79"><td><strong>Rahul</strong><small>CSE3A002</small></td><td>78%</td><td>80%</td><td>79%</td><td><strong>79%</strong></td><td><span class="status upcoming">Good</span></td></tr>
+<tr data-score="68"><td><strong>Priya</strong><small>CSE3A003</small></td><td>70%</td><td>64%</td><td>72%</td><td><strong>68%</strong></td><td><span class="status pending">Needs Support</span></td></tr>
+<tr data-score="91"><td><strong>Arjun</strong><small>CSE3A004</small></td><td>94%</td><td>90%</td><td>89%</td><td><strong>91%</strong></td><td><span class="status completed">Excellent</span></td></tr>
+<tr data-score="62"><td><strong>Sneha</strong><small>CSE3A005</small></td><td>60%</td><td>66%</td><td>61%</td><td><strong>62%</strong></td><td><span class="status pending">Needs Support</span></td></tr>
+</tbody></table></div></section>
+</main>
+<footer>© 2026 E-Learn · Faculty Analytics</footer>
+<script src="script.js"></script>
+</body>
+</html>

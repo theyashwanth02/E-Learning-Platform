@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Learn | Faculty Dashboard</title><link rel="stylesheet" href="style.css">
+</head>
+<body data-page="faculty">
+<nav class="navbar">
+<a class="brand" href="faculty.html"><span class="brand-icon">🎓</span>E-Learn <em>Faculty</em></a>
+<div class="nav-links"><a class="active" href="faculty.html">Dashboard</a><a href="faculty-performance.html">📊 Student Performance</a><button class="logout-btn" onclick="logout()">Logout</button></div>
+</nav>
+<main class="page-container">
+<section class="welcome-banner faculty-banner">
+<div><p class="eyebrow">FACULTY PORTAL</p><h1>Welcome, Prof. Kumar 👋</h1><p>Manage your courses and monitor student learning performance.</p></div>
+<div class="profile-badge"><span>PK</span><div><strong>Prof. Kumar</strong><small>Java Programming Faculty</small></div></div>
+</section>
+<section class="stats-grid">
+<div class="stat-card"><div class="stat-icon blue">👨‍🎓</div><div><span>Total Students</span><strong>48</strong></div></div>
+<div class="stat-card"><div class="stat-icon green">📚</div><div><span>Active Courses</span><strong>4</strong></div></div>
+<div class="stat-card"><div class="stat-icon purple">📝</div><div><span>Pending Reviews</span><strong>7</strong></div></div>
+<div class="stat-card"><div class="stat-icon orange">📈</div><div><span>Class Average</span><strong>76%</strong></div></div>
+</section>
+<section class="dashboard-grid">
+<div class="panel"><div class="panel-heading"><div><h2>Course Management</h2><p>Your teaching activities</p></div></div>
+<div class="faculty-course"><div class="course-symbol java">☕</div><div><h3>Java Programming</h3><p>48 students · 12 modules</p></div><span class="status completed">Active</span></div>
+<div class="faculty-course"><div class="course-symbol blue-bg">📘</div><div><h3>Object Oriented Programming</h3><p>32 students · 8 modules</p></div><span class="status completed">Active</span></div>
+</div>
+<div class="panel"><div class="panel-heading"><div><h2>Quick Actions</h2><p>Faculty tools</p></div></div>
+<div class="quick-grid"><a class="quick-card" href="faculty-performance.html"><span>📊</span><b>Performance</b><small>View student analytics</small></a><button class="quick-card button-card" onclick="alert('Course creation module can be connected to a backend later.')"><span>➕</span><b>Create Course</b><small>Add a new course</small></button><button class="quick-card button-card" onclick="alert('Material upload module is ready for backend integration.')"><span>📤</span><b>Upload Material</b><small>Add study content</small></button><button class="quick-card button-card" onclick="alert('Quiz management module can be connected to a database later.')"><span>📝</span><b>Manage Quiz</b><small>Create assessments</small></button></div>
+</div>
+</section>
+</main>
+<footer>© 2026 E-Learn · Faculty Portal</footer>
+<script src="script.js"></script>
+</body>
+</html>

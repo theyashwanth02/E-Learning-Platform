@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Learn | Java Programming</title><link rel="stylesheet" href="style.css">
+</head>
+<body data-page="student">
+<nav class="navbar">
+<a class="brand" href="dashboard.html"><span class="brand-icon">🎓</span>E-Learn</a>
+<div class="nav-links"><a href="dashboard.html">Dashboard</a><a class="active" href="courses.html">📚 My Courses</a><a href="assignments.html">📋 Assignments</a><a href="quiz.html">❓ Quizzes</a><a href="performance.html">📊 Performance</a><button class="logout-btn" onclick="logout()">Logout</button></div>
+</nav>
+<main class="page-container">
+<div class="course-hero">
+<div><span class="tag">PROGRAMMING</span><h1>Java Programming</h1><p>Instructor: <b>Prof. Kumar</b></p><p class="muted">Master Java fundamentals and object-oriented programming through structured modules.</p></div>
+<div class="hero-progress"><div class="donut small" style="--value:85"><div><strong>85%</strong><small>Progress</small></div></div></div>
+</div>
+<section class="content-panel">
+<div class="panel-heading"><div><h2>Course Modules</h2><p>Complete the modules in sequence.</p></div><span class="status completed">3 of 5 complete</span></div>
+<div class="module-list">
+<div class="module completed"><span>✓</span><div><h3>1. Introduction to Java</h3><p>Completed</p></div><b>100%</b></div>
+<div class="module completed"><span>✓</span><div><h3>2. Variables and Data Types</h3><p>Completed</p></div><b>100%</b></div>
+<div class="module completed"><span>✓</span><div><h3>3. Control Statements</h3><p>Completed</p></div><b>100%</b></div>
+<div class="module current"><span>4</span><div><h3>4. Object Oriented Programming</h3><p>In Progress · Classes, Objects, Inheritance and Polymorphism</p></div><b>65%</b></div>
+<div class="module"><span>5</span><div><h3>5. Exception Handling</h3><p>Not Started</p></div><b>0%</b></div>
+</div>
+<div class="action-buttons">
+<button onclick="watchLecture()">▶ Watch Lecture</button>
+<button onclick="studyMaterial()">📄 Study Material</button>
+<a class="outline-btn large" href="quiz.html">❓ Take Quiz</a>
+</div>
+</section>
+</main>
+<footer>© 2026 E-Learn · Java Programming</footer>
+<script src="script.js"></script>
+</body>
+</html>
